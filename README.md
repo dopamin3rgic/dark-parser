@@ -8,8 +8,6 @@ Install BeautifulSoup if you don't have it already: `pip install bs4`
 Basic Syntax:
 `python3 forumparsers.py {forum} -d {filepath}`
 
-
-Help Menu
 ```
 user@host:~/forum-parser$ ./forumparser.py -h
 usage: forumparser.py [-h] {raidforums,exploitin,omerta} ...
@@ -37,7 +35,7 @@ optional arguments:
 
 ## Examples
 
-### Using -o Option
+### Using -o option
 ```
 user@host:~/forum-parser$ python3 forumparser.py raidforums -d ./rf_htmls -o rf_threads.csv
 Parsing Thread: $0.5 NordVPN ACCOUNTS [ WARRANTY ]
