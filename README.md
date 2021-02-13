@@ -1,4 +1,4 @@
-# forum-parser
+# dark-parser
 This tool can be used to parse HTML files from popular deep/dark web forums. This tool does **NOT** crawl the forums (there are plenty of tools that will already do this) and it assumes you have the relevant HTML files stored locally on your machine. It currently works with forum threads from RaidForums, Exploit.in, and Omerta. 
 
 ## Setup
@@ -6,11 +6,11 @@ Install BeautifulSoup if you don't have it already: `pip install bs4`
 
 ## Usage
 Basic Syntax:
-`python3 forumparsers.py {forum} -d {filepath}`
+`python3 darkparser.py {forum} -d {filepath}`
 
 ```
-user@host:~/forum-parser$ ./forumparser.py -h
-usage: forumparser.py [-h] {raidforums,exploitin,omerta} ...
+user@host:~/dark-parser$ ./darkparser.py -h
+usage: darkparser.py [-h] {raidforums,exploitin,omerta} ...
 
 Parses threads, posts, dates, and usernames from deep/dark web forums.
 
@@ -19,8 +19,8 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-user@host:~/forum-parser$ ./forumparser.py raidforums -h
-usage: forumparser.py raidforums [-h] [-o <filename>] -d <filepath>
+user@host:~/dark-parser$ ./darkparser.py raidforums -h
+usage: darkparser.py raidforums [-h] [-o <filename>] -d <filepath>
 
 Parses HTML files from RaidForums
 
@@ -37,7 +37,7 @@ optional arguments:
 
 ### Using -o option
 ```
-user@host:~/forum-parser$ python3 forumparser.py raidforums -d ./rf_htmls -o rf_threads.csv
+user@host:~/dark-parser$ python3 darkparser.py raidforums -d ./rf_htmls -o rf_threads.csv
 Parsing Thread: $0.5 NordVPN ACCOUNTS [ WARRANTY ]
 Parsing Thread: 0.005$ Minecraft accounts
 Parsing Thread: [#0] SUPER EARNINGS | EXCELLENT MIX OF WHITEHAT & BLACKHAT METHODS | EARN $200 DAILY
@@ -50,7 +50,7 @@ Writing posts to rf_threads.csv
 ```
 ### Standard mode
 ```
-user@host:~/forum-parser$ python3 forumparser.py omerta -d ./omerta-htmls/
+user@host:~/dark-parser$ python3 darkparser.py omerta -d ./omerta-htmls/
 Parsing Thread: Anonymous Worldwide VPN Service
 Parsing Thread: Прогон 7ым XRumerоm по форумам  блогам  гостевым. ru и en базы
 Parsing Thread: WWW.FE-ACC18.RU!!!!! SellCC + CVV !!!!!! Легендарный сервис по продаже СС !!!!!!!!!
