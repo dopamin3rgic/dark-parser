@@ -2,12 +2,12 @@
 This tool can be used to parse HTML files from popular deep/dark web forums. This tool does **NOT** crawl the forums (there are plenty of tools that will already do this) and it assumes you have the relevant HTML files stored locally on your machine. It currently works with forum threads from RaidForums, Exploit.in, and Omerta. 
 
 ## Setup
-- Install BeautifulSoup if you don't have it already: `pip install bs4`
+Install BeautifulSoup if you don't have it already: `pip install bs4`
 
 ## Usage
-
+Basic Syntax:
 `python3 forumparsers.py {forum} -d {directory-path}`
-
+Help
 ```
 user@host:~/forum-parser$ ./forumparser.py -h
 usage: forumparser.py [-h] {raidforums,exploitin,omerta} ...
@@ -35,7 +35,7 @@ optional arguments:
 
 ## Examples
 
-### Configurable output filename
+### Configurable output filename using -o
 ```
 user@host:~/forum-parser$ python3 forumparser.py raidforums -d ./rf_htmls -o rf_threads.csv
 Parsing Thread: $0.5 NordVPN ACCOUNTS [ WARRANTY ]
@@ -48,7 +48,7 @@ Parsing Thread: 0 S C P - Exam writeup (x8) $150
 Done processing 24 posts!
 Writing posts to rf_threads.csv
 ```
-### Default mode
+### Standard mode
 ```
 user@host:~/forum-parser$ python3 forumparser.py omerta -d ./omerta-htmls/
 Parsing Thread: Anonymous Worldwide VPN Service
@@ -72,4 +72,4 @@ Writing posts to omerta.csv
 ```
 ## Future Development
 - More forum options to come.
-- Exception handling for when non-thread files or incorrect forum files are used with `-d `
+- Exception handling for when non-thread files or when incorrect forum files are passed to `-d `
