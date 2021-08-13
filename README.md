@@ -1,5 +1,5 @@
 # dark-parser
-This tool can be used to parse HTML files from popular deep/dark web forums. This tool does **NOT** crawl the forums (there are plenty of tools that will already do this) and it assumes you have the relevant HTML files stored locally on your machine. It currently works with **forum threads** from RaidForums, Exploit.in, and Omerta. The output file can be used to more easily run analysis of the posts & posters of the forums. 
+This tool can be used to parse HTML files from popular deep/dark web forums. This tool does **NOT** crawl the forums (there are plenty of tools that will already do this) and it assumes you have the relevant HTML files stored locally on your machine. It currently works with **forum threads** from RaidForums, Exploit.in, and Omerta. The output file can be used to more easily run analysis of the posts & posters on the forum. 
 
 ## Setup
 Install BeautifulSoup if you don't have it already: `pip install bs4`
